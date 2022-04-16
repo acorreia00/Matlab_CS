@@ -1,0 +1,23 @@
+
+
+	Procedimentos a ter com os 3 ficheiros do Matlab:
+
+
+
+	1) carregar o ficheiro com as constantes (mf_dados_V5.m);
+
+
+	2) Correr o fiheiro mdl (Demo_Simulink_V5.mdl), que contém 5 exemplos
+
+	
+	3) Para imprimir as figuras do Simulink para um programa (Word ou Powerpoint), correr o ficheiro mf_plot_V5.m 
+
+
+
+
+
+	10 de outubro de 2015
+
+	Luis Rocha
+
+	luisrocha@deea.isel.pt

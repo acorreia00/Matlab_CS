@@ -1,0 +1,2602 @@
+Model {
+  Name			  "Demo_Simulink_V5"
+  Version		  7.6
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.53"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Fri Feb 11 16:09:22 2000"
+  Creator		  "Luis Lamy"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Luis Lamy"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat Oct 10 17:36:03 2015"
+  RTWModifiedTimeStamp	  366399359
+  ModelVersionFormat	  "1.%<AutoIncrement:53>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.10.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.10.0"
+	  StartTime		  "0.0"
+	  StopTime		  "500"
+	  AbsTol		  "1e-6"
+	  FixedStep		  "auto"
+	  InitialStep		  "0.1"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "0.1"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "SingleTasking"
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.10.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  off
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "sigsOut"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    4
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "OptimizeModelRefInitCode"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.10.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "None"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.10.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.10.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.10.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    2
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  on
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateSLWebview	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		14
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"PortableWordSizes"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 136, 117, 1016, 747 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Relay
+      OnSwitchValue	      "eps"
+      OffSwitchValue	      "eps"
+      OnOutputValue	      "1"
+      OffOutputValue	      "0"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: All ports same datatype"
+      LockScale		      off
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      StateSpace
+      A			      "1"
+      B			      "1"
+      C			      "1"
+      D			      "1"
+      X0		      "0"
+      AbsoluteTolerance	      "auto"
+      ContinuousStateAttributes	"''"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+    Block {
+      BlockType		      TransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 2 1]"
+      AbsoluteTolerance	      "auto"
+      ContinuousStateAttributes	"''"
+      Realization	      "auto"
+    }
+  }
+  System {
+    Name		    "Demo_Simulink_V5"
+    Location		    [2, 93, 1278, 983]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.196850, 0.196850, 0.196850, 0.196850]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "266"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "98"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Exemplo 1\nFunções de Transferência"
+      SID		      "1"
+      Ports		      []
+      Position		      [85, 65, 125, 125]
+      BackgroundColor	      "orange"
+      DropShadow	      on
+      FontName		      "Arial"
+      FontSize		      11
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Exemplo 1\nFunções de Transferência"
+	Location		[2, 94, 1014, 733]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"264"
+	Block {
+	  BlockType		  Constant
+	  Name			  "Escalão Posição\n(default SP=4)"
+	  SID			  "2"
+	  Position		  [40, 80, 70, 110]
+	  FontSize		  11
+	  Value			  "4"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "FT1"
+	  SID			  "3"
+	  Position		  [140, 67, 210, 123]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Numerator		  "[0 0 4]"
+	  Denominator		  "[1 20 4]"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "4"
+	  Ports			  [2, 1]
+	  Position		  [275, 56, 305, 109]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Osci1"
+	  SID			  "5"
+	  Ports			  [1]
+	  Position		  [350, 70, 380, 100]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Floating		  off
+	  Location		  [6, 61, 1030, 762]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  TimeRange		  "50"
+	  YMin			  "0"
+	  YMax			  "6"
+	  DataFormat		  "Array"
+	  MaxDataPoints		  "10000"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To W1"
+	  SID			  "6"
+	  Ports			  [1]
+	  Position		  [275, 181, 310, 199]
+	  ForegroundColor	  "red"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  VariableName		  "y1"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To W2"
+	  SID			  "74"
+	  Ports			  [1]
+	  Position		  [140, 181, 175, 199]
+	  ForegroundColor	  "red"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  VariableName		  "sp1"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Array"
+	}
+	Line {
+	  SrcBlock		  "Escalão Posição\n(default SP=4)"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    Points		    [0, -45; 115, 0; 0, 20]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [10, 0]
+	    Branch {
+	      DstBlock		      "FT1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 95]
+	      DstBlock		      "To W2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "FT1"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 95]
+	    DstBlock		    "To W1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Osci1"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "Exemplo1 - Funções de transferência"
+	  Position		  [188, 26]
+	  BackgroundColor	  "orange"
+	  DropShadow		  on
+	  FontName		  "Arial"
+	  FontSize		  20
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Exemplo 2\nBlocos e Controlador PI"
+      SID		      "7"
+      Ports		      []
+      Position		      [245, 65, 285, 125]
+      BackgroundColor	      "green"
+      DropShadow	      on
+      FontName		      "Arial"
+      FontSize		      11
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Exemplo 2\nBlocos e Controlador PI"
+	Location		[2, 133, 1014, 801]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"212"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Controlador PI"
+	  SID			  "8"
+	  Ports			  [1, 1]
+	  Position		  [155, 141, 215, 189]
+	  BackgroundColor	  "lightBlue"
+	  DropShadow		  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Controlador PI"
+	    Location		    [156, 399, 741, 648]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "157"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Ve"
+	      SID		      "9"
+	      Position		      [70, 38, 100, 52]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      TransferFcn
+	      Name		      "Ganho Integral"
+	      SID		      "10"
+	      Position		      [170, 102, 230, 138]
+	      Numerator		      "[Ki]"
+	      Denominator	      "[1 0]"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Ganho proporcional"
+	      SID		      "11"
+	      Position		      [180, 25, 225, 65]
+	      Gain		      "Kp"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      "12"
+	      Ports		      [2, 1]
+	      Position		      [290, 47, 310, 83]
+	      ShowName		      off
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Vc"
+	      SID		      "13"
+	      Position		      [335, 58, 365, 72]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Ganho proporcional"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 10]
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Ganho Integral"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -45]
+	      DstBlock		      "Sum1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Ve"
+	      SrcPort		      1
+	      Points		      [0, 0; 15, 0]
+	      Branch {
+		DstBlock		"Ganho proporcional"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 75]
+		DstBlock		"Ganho Integral"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Vc"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "FT1"
+	  SID			  "14"
+	  Position		  [250, 137, 320, 193]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Numerator		  "[0 0 4]"
+	  Denominator		  "[1 20 4]"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  SID			  "15"
+	  Ports			  [2, 1]
+	  Position		  [360, 143, 390, 172]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Oscil2"
+	  SID			  "16"
+	  Ports			  [1]
+	  Position		  [440, 145, 470, 175]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Floating		  off
+	  Location		  [6, 62, 1030, 730]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  TimeRange		  "50"
+	  YMin			  "0"
+	  YMax			  "12"
+	  SaveName		  "ScopeData1"
+	  DataFormat		  "Array"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "10000"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "17"
+	  Ports			  [2, 1]
+	  Position		  [110, 155, 130, 175]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To W1"
+	  SID			  "75"
+	  Ports			  [1]
+	  Position		  [135, 239, 175, 261]
+	  ForegroundColor	  "red"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  VariableName		  "sp2"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To W3"
+	  SID			  "18"
+	  Ports			  [1]
+	  Position		  [375, 199, 415, 221]
+	  ForegroundColor	  "red"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  VariableName		  "y2"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Valor \nde Referencia\n(default SP=4)"
+	  SID			  "19"
+	  Position		  [30, 150, 60, 180]
+	  Value			  "4"
+	}
+	Line {
+	  SrcBlock		  "Valor \nde Referencia\n(default SP=4)"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    Points		    [0, -45; 255, 0; 0, 30]
+	    DstBlock		    "Mux1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [5, 0]
+	    Branch {
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 85]
+	      DstBlock		      "To W1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  DstBlock		  "Oscil2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Controlador PI"
+	  SrcPort		  1
+	  DstBlock		  "FT1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "FT1"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "Mux1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    Branch {
+	      Points		      [0, 15; -220, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Branch {
+	      DstBlock		      "To W3"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Controlador PI"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "Ex2 - Diagrama de Blocos com controlador PI"
+	  Position		  [258, 41]
+	  BackgroundColor	  "green"
+	  DropShadow		  on
+	  FontName		  "Arial"
+	  FontSize		  20
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Exemplo 3\nModelos de \nSistemas de Nível"
+      SID		      "20"
+      Ports		      []
+      Position		      [385, 65, 425, 125]
+      BackgroundColor	      "lightBlue"
+      DropShadow	      on
+      FontName		      "Arial"
+      FontSize		      11
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Exemplo 3\nModelos de \nSistemas de Nível"
+	Location		[2, 94, 1014, 733]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"180"
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "  tw"
+	  SID			  "21"
+	  Ports			  [1]
+	  Position		  [355, 124, 375, 146]
+	  ForegroundColor	  "red"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  VariableName		  "Q"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "  tw1"
+	  SID			  "22"
+	  Ports			  [1]
+	  Position		  [101, 335, 119, 350]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  ForegroundColor	  "red"
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  VariableName		  "Q1"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  " tw"
+	  SID			  "23"
+	  Ports			  [1]
+	  Position		  [210, 75, 230, 95]
+	  BlockRotation		  270
+	  ForegroundColor	  "red"
+	  FontName		  "Arial"
+	  FontSize		  8
+	  VariableName		  "H"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  " tw1"
+	  SID			  "24"
+	  Ports			  [1]
+	  Position		  [260, 240, 280, 260]
+	  ForegroundColor	  "red"
+	  FontName		  "Arial"
+	  FontSize		  8
+	  VariableName		  "H1"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Caudal \nEntrada Qi"
+	  SID			  "25"
+	  Position		  [30, 120, 60, 150]
+	  Value			  "20"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Caudal \nEntrada Qi1"
+	  SID			  "26"
+	  Position		  [30, 235, 60, 265]
+	  Value			  "20"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "F1"
+	  SID			  "27"
+	  Position		  [130, 114, 190, 156]
+	  BackgroundColor	  "yellow"
+	  Denominator		  "[C 0]"
+	  Port {
+	    PortNumber		    1
+	    Name		    "H"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "F2"
+	  SID			  "28"
+	  Position		  [130, 229, 190, 271]
+	  BackgroundColor	  "yellow"
+	  Denominator		  "[C 0]"
+	  Port {
+	    PortNumber		    1
+	    Name		    "H"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From"
+	  SID			  "29"
+	  Position		  [365, 200, 395, 220]
+	  ForegroundColor	  "green"
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "H"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From1"
+	  SID			  "30"
+	  Position		  [370, 246, 395, 264]
+	  ForegroundColor	  "green"
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "H1"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  SID			  "31"
+	  Position		  [245, 114, 290, 156]
+	  BackgroundColor	  "orange"
+	  Gain			  "1/R"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Q1"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain2"
+	  SID			  "32"
+	  Position		  [135, 289, 180, 331]
+	  BlockMirror		  on
+	  BackgroundColor	  "orange"
+	  Gain			  "1/R"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto"
+	  SID			  "33"
+	  Position		  [255, 291, 280, 309]
+	  ForegroundColor	  "green"
+	  GotoTag		  "H1"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  "34"
+	  Position		  [400, 43, 430, 67]
+	  ForegroundColor	  "green"
+	  GotoTag		  "H"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  SID			  "35"
+	  Ports			  [2]
+	  Position		  [355, 70, 385, 105]
+	  ForegroundColor	  "blue"
+	  Floating		  off
+	  Location		  [5, 61, 1029, 762]
+	  Open			  off
+	  NumInputPorts		  "2"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	    axes2		    "%<SignalLabel>"
+	  }
+	  TimeRange		  "50"
+	  YMin			  "0~0"
+	  YMax			  "60~30"
+	  SaveName		  "ScopeData3"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  SID			  "36"
+	  Ports			  [2, 1]
+	  Position		  [80, 125, 100, 145]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  SID			  "37"
+	  Ports			  [2, 1]
+	  Position		  [80, 240, 100, 260]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Verificação \nda igualdade H=H1"
+	  SID			  "38"
+	  Ports			  [2]
+	  Position		  [460, 202, 480, 233]
+	  ForegroundColor	  "blue"
+	  Floating		  off
+	  Location		  [5, 61, 1029, 762]
+	  Open			  off
+	  NumInputPorts		  "2"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	    axes2		    "%<SignalLabel>"
+	  }
+	  TimeRange		  "50"
+	  YMin			  "0~0"
+	  YMax			  "60~60"
+	  SaveName		  "ScopeData4"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	}
+	Line {
+	  SrcBlock		  "Caudal \nEntrada Qi"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "F1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Q1"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    Points		    [0, 40; -225, 0]
+	    DstBlock		    "Sum1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [20, 0]
+	    Branch {
+	      DstBlock		      "  tw"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -40]
+	      DstBlock		      "Scope"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Line {
+	  Name			  "H"
+	  Labels		  [0, 0]
+	  SrcBlock		  "F1"
+	  SrcPort		  1
+	  Points		  [0, 0; 25, 0]
+	  Branch {
+	    DstBlock		    "Gain"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -25]
+	    Branch {
+	      DstBlock		      " tw"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [60, 0; 0, -30; 50, 0]
+	      Branch {
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -25]
+		DstBlock		"Goto1"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Caudal \nEntrada Qi1"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "F2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "H"
+	  Labels		  [0, 0]
+	  SrcBlock		  "F2"
+	  SrcPort		  1
+	  Points		  [0, 0; 25, 0]
+	  Branch {
+	    Points		    [0, 60]
+	    DstBlock		    "Gain2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [20, 0]
+	    Branch {
+	      DstBlock		      " tw1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "Goto"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain2"
+	  SrcPort		  1
+	  Points		  [0, 0; -20, 0]
+	  Branch {
+	    Points		    [-20, 0]
+	    DstBlock		    "Sum2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "  tw1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "From"
+	  SrcPort		  1
+	  DstBlock		  "Verificação \nda igualdade H=H1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From1"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -30]
+	  DstBlock		  "Verificação \nda igualdade H=H1"
+	  DstPort		  2
+	}
+	Annotation {
+	  Name			  "Exemplo 3 - 1 Tanque"
+	  Position		  [138, 26]
+	  BackgroundColor	  "lightBlue"
+	  DropShadow		  on
+	  FontName		  "Arial"
+	  FontSize		  20
+	}
+	Annotation {
+	  Name			  "Ex3A: Entrada Qi  e Saída Q1"
+	  Position		  [98, 96]
+	  ForegroundColor	  "lightBlue"
+	  FontName		  "Arial"
+	  FontSize		  12
+	}
+	Annotation {
+	  Name			  "Ex3B: Entrada Qi  e Saída H"
+	  Position		  [98, 211]
+	  ForegroundColor	  "lightBlue"
+	  FontName		  "Arial"
+	  FontSize		  12
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Exemplo 4\nSistema Multivariavel\n Variaveis de Estado"
+      SID		      "39"
+      Ports		      []
+      Position		      [145, 180, 185, 240]
+      BackgroundColor	      "magenta"
+      DropShadow	      on
+      FontName		      "Arial"
+      FontSize		      11
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Exemplo 4\nSistema Multivariavel\n Variaveis de Estado"
+	Location		[2, 94, 1014, 733]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"145"
+	Block {
+	  BlockType		  Scope
+	  Name			  "Caudal 5 e Nivel 2"
+	  SID			  "40"
+	  Ports			  [2]
+	  Position		  [580, 120, 615, 180]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Floating		  off
+	  Location		  [1, 62, 1025, 730]
+	  Open			  off
+	  NumInputPorts		  "2"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	    axes2		    "%<SignalLabel>"
+	  }
+	  TimeRange		  "50"
+	  YMin			  "0~0"
+	  YMax			  "15~30"
+	  SaveName		  "ScopeData2"
+	  DataFormat		  "Array"
+	  MaxDataPoints		  "10000"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Caudal q1"
+	  SID			  "41"
+	  Position		  [75, 135, 105, 165]
+	  Value			  "3"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Caudal q1 ME"
+	  SID			  "42"
+	  Position		  [80, 230, 110, 260]
+	  Value			  "3"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Caudal q2"
+	  SID			  "43"
+	  Position		  [140, 60, 170, 90]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "3"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Caudal q2 ME"
+	  SID			  "44"
+	  Position		  [75, 295, 105, 325]
+	  Value			  "3"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Caudal q3 ME"
+	  SID			  "45"
+	  Position		  [75, 345, 105, 375]
+	  Value			  "4"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Caudal q4"
+	  SID			  "46"
+	  Position		  [335, 70, 365, 100]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "4"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Caudal q5"
+	  SID			  "47"
+	  Ports			  [1]
+	  Position		  [565, 65, 655, 95]
+	  Decimation		  "1"
+	  Lockdown		  off
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Caudal q5 ME"
+	  SID			  "48"
+	  Ports			  [1]
+	  Position		  [450, 265, 540, 295]
+	  Decimation		  "1"
+	  Lockdown		  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "49"
+	  Ports			  [1, 2]
+	  Position		  [375, 271, 380, 309]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "q5"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "h2"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "50"
+	  Ports			  [3, 1]
+	  Position		  [220, 258, 225, 322]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Nivel h2"
+	  SID			  "51"
+	  Ports			  [1]
+	  Position		  [570, 220, 660, 250]
+	  Decimation		  "1"
+	  Lockdown		  off
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Nivel h2 ME"
+	  SID			  "52"
+	  Ports			  [1]
+	  Position		  [450, 320, 540, 350]
+	  Decimation		  "1"
+	  Lockdown		  off
+	}
+	Block {
+	  BlockType		  StateSpace
+	  Name			  "State-Space"
+	  SID			  "53"
+	  Position		  [255, 253, 335, 327]
+	  BackgroundColor	  "cyan"
+	  DropShadow		  on
+	  FontName		  "Arial"
+	  FontSize		  14
+	  A			  "MA"
+	  B			  "MB"
+	  C			  "MC"
+	  D			  "MD"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "54"
+	  Ports			  [2, 1]
+	  Position		  [140, 135, 170, 165]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "++|"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  SID			  "55"
+	  Ports			  [2, 1]
+	  Position		  [335, 135, 365, 165]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "++|"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Tanque 1"
+	  SID			  "56"
+	  Ports			  [1, 1]
+	  Position		  [205, 118, 290, 182]
+	  BackgroundColor	  "yellow"
+	  DropShadow		  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Tanque 1"
+	    Location		    [2, 133, 798, 648]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "191"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q1 + q2"
+	      SID		      "57"
+	      Position		      [25, 43, 55, 57]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      TransferFcn
+	      Name		      "Ft"
+	      SID		      "58"
+	      Position		      [145, 29, 205, 71]
+	      BackgroundColor	      "yellow"
+	      Denominator	      "[C1 0]"
+	    }
+	    Block {
+	      BlockType		      TransferFcn
+	      Name		      "Ft1\n"
+	      SID		      "59"
+	      Position		      [245, 27, 300, 73]
+	      BackgroundColor	      "orange"
+	      FontName		      "Arial"
+	      FontSize		      11
+	      Denominator	      "[R1]"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      "60"
+	      Ports		      [2, 1]
+	      Position		      [80, 40, 100, 60]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "q3"
+	      SID		      "61"
+	      Position		      [380, 43, 410, 57]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Ft"
+	      SrcPort		      1
+	      DstBlock		      "Ft1\n"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Ft1\n"
+	      SrcPort		      1
+	      Points		      [15, 0; 40, 0]
+	      Branch {
+		Points			[0, 45; -270, 0]
+		DstBlock		"Sum1"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"q3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Ft"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "q1 + q2"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Tanque 2"
+	  SID			  "62"
+	  Ports			  [1, 2]
+	  Position		  [400, 119, 495, 181]
+	  BackgroundColor	  "lightBlue"
+	  DropShadow		  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    Name		    "q5"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "h2"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "Tanque 2"
+	    Location		    [2, 133, 790, 640]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "183"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q3+q4"
+	      SID		      "63"
+	      Position		      [25, 43, 55, 57]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      TransferFcn
+	      Name		      "Ft"
+	      SID		      "64"
+	      Position		      [145, 29, 205, 71]
+	      BackgroundColor	      "yellow"
+	      Denominator	      "[C2 0]"
+	    }
+	    Block {
+	      BlockType		      TransferFcn
+	      Name		      "Ft1\n"
+	      SID		      "65"
+	      Position		      [255, 27, 310, 73]
+	      BackgroundColor	      "orange"
+	      FontName		      "Arial"
+	      FontSize		      11
+	      Denominator	      "[R2]"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      "66"
+	      Ports		      [2, 1]
+	      Position		      [80, 40, 100, 60]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "q5"
+	      SID		      "67"
+	      Position		      [380, 43, 410, 57]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "h2"
+	      SID		      "68"
+	      Position		      [395, 133, 425, 147]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "q3+q4"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Ft"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Ft1\n"
+	      SrcPort		      1
+	      Points		      [5, 0; 40, 0]
+	      Branch {
+		DstBlock		"q5"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 45; -270, 0]
+		DstBlock		"Sum1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Ft"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      Branch {
+		DstBlock		"Ft1\n"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 90]
+		DstBlock		"h2"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  SID			  "69"
+	  Position		  [345, 370, 365, 390]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Vector Entrada \n(Caudais)"
+	  SID			  "70"
+	  Position		  [220, 363, 290, 397]
+	  Value			  "[2 3 4]"
+	}
+	Line {
+	  SrcBlock		  "Caudal q1"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Caudal q2"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Tanque 1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Tanque 1"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Caudal q4"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Tanque 2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "q5"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Tanque 2"
+	  SrcPort		  1
+	  Points		  [40, 0]
+	  Branch {
+	    DstBlock		    "Caudal 5 e Nivel 2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -55]
+	    DstBlock		    "Caudal q5"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "h2"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Tanque 2"
+	  SrcPort		  2
+	  Points		  [40, 0]
+	  Branch {
+	    DstBlock		    "Caudal 5 e Nivel 2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "Nivel h2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Caudal q1 ME"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 25]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Caudal q2 ME"
+	  SrcPort		  1
+	  Points		  [50, 0; 0, -20]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Caudal q3 ME"
+	  SrcPort		  1
+	  Points		  [75, 0; 0, -50]
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "State-Space"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "q5"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  DstBlock		  "Caudal q5 ME"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "h2"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [20, 0; 0, 35]
+	  DstBlock		  "Nivel h2 ME"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vector Entrada \n(Caudais)"
+	  SrcPort		  1
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "State-Space"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "Exemplo 4 - 2 Tanques separados Multivariavel"
+	  Position		  [373, 26]
+	  BackgroundColor	  "magenta"
+	  DropShadow		  on
+	  FontName		  "Arial"
+	  FontSize		  20
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Exemplo 5\nControlo de Temperatura\nControlador ON/OFF com Histerese"
+      SID		      "76"
+      Ports		      []
+      Position		      [335, 180, 375, 240]
+      BackgroundColor	      "red"
+      DropShadow	      on
+      FontName		      "Arial"
+      FontSize		      11
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Exemplo 5\nControlo de Temperatura\nControlador ON/OFF com Histerese"
+	Location		[2, 93, 1278, 983]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"214"
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "2w1"
+	  SID			  "78"
+	  Ports			  [1]
+	  Position		  [505, 310, 535, 330]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  VariableName		  "UC"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "2w2"
+	  SID			  "79"
+	  Ports			  [1]
+	  Position		  [545, 106, 570, 124]
+	  FontName		  "Arial"
+	  FontSize		  11
+	  VariableName		  "T"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Bloco de \nAtraso "
+	  SID			  "80"
+	  Position		  [225, 136, 260, 184]
+	  BackgroundColor	  "cyan"
+	  DropShadow		  on
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Numerator		  "[0 0 1]"
+	  Denominator		  "[5 1]"
+	}
+	Block {
+	  BlockType		  Relay
+	  Name			  "Comparador \nHisterético"
+	  SID			  "81"
+	  Position		  [145, 145, 175, 175]
+	  BackgroundColor	  "[1.000000, 0.000000, 0.000000]"
+	  DropShadow		  on
+	  OnSwitchValue		  "5"
+	  OffSwitchValue	  "-5"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Saída do Controlador ON /OFF"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Limite Inferior \nda Temperatura"
+	  SID			  "82"
+	  Position		  [415, 180, 445, 210]
+	  BackgroundColor	  "gray"
+	  Value			  "20"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Limite Superior\nda Temperatura"
+	  SID			  "83"
+	  Position		  [410, 75, 440, 105]
+	  BackgroundColor	  "gray"
+	  Value			  "30"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  SID			  "84"
+	  Ports			  [4, 1]
+	  Position		  [490, 130, 520, 180]
+	  FontName		  "Arial"
+	  FontSize		  11
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Oscil2"
+	  SID			  "85"
+	  Ports			  [2]
+	  Position		  [560, 177, 590, 208]
+	  ForegroundColor	  "green"
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Floating		  off
+	  Location		  [5, 53, 1283, 975]
+	  Open			  off
+	  NumInputPorts		  "2"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	    axes2		    "%<SignalLabel>"
+	  }
+	  TimeRange		  "116.3079470198676"
+	  YMin			  "0~-0.2"
+	  YMax			  "35~1.2"
+	  DataFormat		  "Array"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "10000"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Processo \nTérmico"
+	  SID			  "86"
+	  Position		  [300, 136, 345, 184]
+	  BackgroundColor	  "yellow"
+	  DropShadow		  on
+	  FontName		  "Arial"
+	  FontSize		  11
+	  Numerator		  "[0 0 50]"
+	  Denominator		  "[20 1]"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "87"
+	  Ports			  [2, 1]
+	  Position		  [105, 150, 125, 170]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Valor \nde Referencia"
+	  SID			  "88"
+	  Position		  [25, 145, 55, 175]
+	  BackgroundColor	  "magenta"
+	  DropShadow		  on
+	  Value			  "25"
+	}
+	Line {
+	  SrcBlock		  "Valor \nde Referencia"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "Sum"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -40; 300, 0; 0, 30]
+	    DstBlock		    "Mux1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Processo \nTérmico"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, 80; -260, 0]
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Mux1"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Comparador \nHisterético"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Saída do Controlador ON /OFF"
+	  SrcBlock		  "Comparador \nHisterético"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Labels		    [2, 0]
+	    Points		    [0, 130; 285, 0]
+	    Branch {
+	      Points		      [65, 0]
+	      DstBlock		      "Oscil2"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, 30]
+	      DstBlock		      "2w1"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    DstBlock		    "Bloco de \nAtraso "
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    DstBlock		    "2w2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [15, 0]
+	    DstBlock		    "Oscil2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Limite Superior\nda Temperatura"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 50]
+	  DstBlock		  "Mux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Limite Inferior \nda Temperatura"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -25]
+	  DstBlock		  "Mux1"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Bloco de \nAtraso "
+	  SrcPort		  1
+	  DstBlock		  "Processo \nTérmico"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "Ex5 - Controlo de Temperatura com \ncontrolador ON/Off com histerese"
+	  Position		  [183, 36]
+	  BackgroundColor	  "orange"
+	  DropShadow		  on
+	  FontName		  "Arial"
+	  FontSize		  20
+	}
+      }
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To W2"
+      SID		      "71"
+      Ports		      [1]
+      Position		      [85, 297, 125, 313]
+      FontName		      "Arial"
+      FontSize		      11
+      VariableName	      "t"
+      MaxDataPoints	      "inf"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "tempo"
+      SID		      "72"
+      Position		      [40, 295, 60, 315]
+      FontName		      "Arial"
+      FontSize		      11
+      Decimation	      "10"
+    }
+    Line {
+      SrcBlock		      "tempo"
+      SrcPort		      1
+      DstBlock		      "To W2"
+      DstPort		      1
+    }
+    Annotation {
+      Name		      " Introdução ao Simulink (5 exemplos)"
+      Position		      [249, 29]
+      BackgroundColor	      "yellow"
+      DropShadow	      on
+      FontName		      "Book Antiqua"
+      FontSize		      20
+      FontWeight	      "bold"
+    }
+  }
+}
