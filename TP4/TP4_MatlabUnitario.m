@@ -43,6 +43,7 @@ KMRV=1; % Ganho do Motor + Redutor + Válvula (m^3/(s V))
 
 
 % Parâmetros do controlador PID
+
 TC1=0.5;
 TC2=0.5;
 KC=2;
