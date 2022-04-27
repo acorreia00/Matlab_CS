@@ -44,12 +44,16 @@ KMRV=1; % Ganho do Motor + Redutor + Válvula (m^3/(s V))
 
 % Parâmetros do controlador PID
 
+% Calculo dos polos e de tau1 / tau2
 FT=tf(R3,[C1*C2*C3*R1*R2*R3 C1*C2*R1*R2 0 0]);
 polos=eig(FT);
 polos=sort(polos);
 TC1=polos(3);
 TC2=polos(2);
-KC=2;
+
+% Calculo de KC
+Z=1;  % Amortecimento
+KC=5;
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Fim da Mensagem inicial para a linha de comandos
