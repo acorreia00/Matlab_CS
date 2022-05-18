@@ -53,16 +53,15 @@ E=1;
 FT=tf(A,[B C D E]);
 polos=eig(FT);
 polos=sort(polos);
-TC1=polos(3);
+TC1=polos(1);
 TC2=polos(2);
-
-% Calculo da FTCF
-
-
+TC3=polos(3);
 
 % Calculo de KC
 Z=1;  % Amortecimento
-KC=0.01;
+W0=1/(2*Z*TC3);
+KC=(W0^2)/((A*KP_in)/TC3);
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Fim da Mensagem inicial para a linha de comandos
