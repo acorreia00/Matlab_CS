@@ -53,14 +53,13 @@ E = 1;
 FT = tf(A,[B C D E]);
 den = [ B C D E ]
 polos = roots(den);
-TC3 = polos(1);
+TC1 = polos(1);
 TC2 = polos(2);
-TC1 = polos(3);
-T3=-(1/TC3);
+TC3 = polos(3);
 
 % Calculo de KC
 Z = 1;  % Amortecimento
-KC = (((1/2*Z*T3)^2)*T3)/(A*KS);
+KC = (()*TC1)/(A*KS);
 
 
 
