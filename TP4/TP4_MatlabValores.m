@@ -47,20 +47,20 @@ KMRV = 5; % Ganho do Motor + Redutor + Válvula (m^3/(s V))
 % Calculo dos polos e de TC2 / TC3
 A = KMRV*R3;
 B = R1*R2*C2*R2*C3*R3;
-C = R1*R2*C2*R2+R1*R2*C3*R3+R1*R2*C2*R3+C2*R2*C3*R3;
-D = C2*R2+C3*R3;
+C = (R1*R2*C3*R3)+(R1*R2*C2*R2)+(C2*R2*C3*R3);
+D = (R1*R2)+(C3*R3)+(C2*R2);
 E = 1;
 FT = tf(A,[B C D E]);
-den = [ B C D E ]
-polos = roots(den);
+polos = eig(FT);
+polos = sort(polos);
 TC3 = polos(1);
 TC2 = polos(2);
 TC1 = polos(3);
-T3=-(1/TC3);
 
 % Calculo de KC
 Z = 1;  % Amortecimento
-KC = (((1/2*Z*T3)^2)*T3)/(A*KS);
+W0 = (2*Z)/(TC3);
+KC = ((W0^2)*TC3)/(A*KS);
 
 
 
