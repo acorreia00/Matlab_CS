@@ -62,12 +62,14 @@ TC2 = -(1/b);
 TC3 = -(1/a);
 
 % Calculo de KC
-Z = 1;  % Amortecimento
+Z = 0.707;  % Amortecimento
 L= 1/TC3
 W0 = L/(2*Z);
 KC = ((W0^2)*TC3)/(A*KP_in);
 
+FTCA = tf( A*KC , [TC3 1 0]);
 
+FTCF = tf( (A*KP_in*KC)/TC3 , [1 L (A*KP_in*KC)/TC3]);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Fim da Mensagem inicial para a linha de comandos
 disp('Variáveis do Trabalho 4 carregadas para a workspace:')
