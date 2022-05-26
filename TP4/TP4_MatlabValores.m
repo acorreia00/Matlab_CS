@@ -57,14 +57,15 @@ a = polos(1);
 b = polos(2);
 c = polos(3);
 
-TC3 = -(1/a);
-TC2 = -(1/b);
 TC1 = -(1/c);
+TC2 = -(1/b);
+TC3 = -(1/a);
 
 % Calculo de KC
-Z = 0.707;  % Amortecimento
-W0 = (2*Z)/(TC3);
-KC = ((W0^2)*TC3)/(A*KS);
+Z = 1;  % Amortecimento
+L= 1/TC3
+W0 = L/(2*Z);
+KC = ((W0^2)*TC3)/(A*KP_in);
 
 
 
